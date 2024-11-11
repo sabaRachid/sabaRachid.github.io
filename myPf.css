@@ -1,0 +1,63 @@
+body {}
+
+nav {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 350px;
+    z-index: 1; /* Utilisable avec un tag position */
+
+}
+
+nav ul {
+    list-style-type: none; /* Enlève les puces */
+    display: flex;
+    justify-content: space-around; /* Espace égal entre les éléments */
+    align-items: center;
+    background-color: rgb(81, 102, 102);
+    border-radius: 20%;
+    padding: 5px;
+}
+
+nav li {
+    padding: 18px 0px;
+}
+
+#Home {
+    position: relative;
+    text-align: center; /* Centre l'image et le texte horizontalement */
+    padding: 20px 0;    /* Ajoute un peu d'espace au-dessus et en dessous */
+}
+
+#Home img {
+    display: block;     /* Transforme l'image en bloc */
+    margin: 0 auto;     /* Centre l'image horizontalement */
+    max-width: 100%;    /* Rendre l'image responsive */
+    height: auto;
+}
+
+#Home h1 {
+    position: absolute;
+    top: 40%;   /* Ajoute un espace entre l'image et le texte */
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 300%;
+    color: white;
+    z-index: 2;
+}
+
+main #section1{
+    background-color: rgb(218, 200, 200);
+}
+
+main #section2 {
+    background-color: rgb(216, 216, 187);
+}
+
+main #section3 {
+    background-color: rgb(188, 216, 187);
+}
+
+main #section4 {
+    background-color: rgb(187, 194, 216);
+}
