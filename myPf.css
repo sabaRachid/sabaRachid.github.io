@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     position: relative;
     background-color: rgb(10, 73, 99);
@@ -32,7 +37,6 @@ nav li {
 
 #Home {
     text-align: center; /* Centre l'image et le texte horizontalement */
-    border: 5px solid rgb(15, 158, 214);
 }
 
 #Home img {
@@ -41,7 +45,7 @@ nav li {
     width: 100%;
     height: 500px;
     object-fit: cover; /* Ajuste l'image pour qu'elle couvre le conteneur tout en gardant les proportions */
-    filter: blur(0.9px);
+    filter: blur(4px);
 }
 
 #Home h1 {
@@ -54,32 +58,41 @@ nav li {
     z-index: 2;
 }
 
-main {
+.content-section {
     position: relative;
-}
-main #section1{
-    position: absolute;
-    width: 100%;
-    background-color: rgb(218, 200, 200);
-}
-
-main #section2 {
-    position: absolute;
-    width: 100%;
-    top: 303px;
-    background-color: rgb(216, 216, 187);
+    padding: 10px;
+    height: 500px;
+} 
+#section2 {
+    background-color: rgb(67, 0, 108);
 }
 
-main #section3 {
-    position: absolute;
-    width: 100%;
-    top: 606px;
-    background-color: rgb(188, 216, 187);
+#section3 {
+    background-color: rgb(108, 0, 32);
 }
 
-main #section4 {
+#section4 {
+    background-color: rgb(1, 66, 53);
+}
+
+/* Couleurs de texte spécifiques aux sections */
+#section2 .texte {
+    color: rgb(67, 0, 108);
+}
+
+#section3 .texte {
+    color: rgb(108, 0, 32);
+}
+
+#section4 .texte {
+    color: rgb(1, 66, 53);
+}
+
+.texte {
     position: absolute;
-    width: 100%;
-    top: 909px;
-    background-color: rgb(187, 194, 216);
+    top: 100px;
+    left: 1000px;
+    padding: 10px 100px;
+    width: 30%;
+    background-color: white;
 }
