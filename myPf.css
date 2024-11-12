@@ -1,22 +1,29 @@
-body {}
+header {
+    position: relative;
+    background-color: rgb(10, 73, 99);
+}
 
 nav {
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 800px;
-    width: 350px;
-    z-index: 1; /* Utilisable avec un tag position */
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(10, 73, 99);
 
 }
 
 nav ul {
     list-style-type: none; /* Enlève les puces */
+    margin: 0 auto;
+    padding: 5px;
+    max-width: 300px;
     display: flex;
     justify-content: space-around; /* Espace égal entre les éléments */
     align-items: center;
-    background-color: rgb(81, 102, 102);
-    border-radius: 20%;
-    padding: 5px;
+    color: white;
+    font-weight: bold;
 }
 
 nav li {
@@ -24,16 +31,17 @@ nav li {
 }
 
 #Home {
-    position: relative;
     text-align: center; /* Centre l'image et le texte horizontalement */
-    padding: 20px 0;    /* Ajoute un peu d'espace au-dessus et en dessous */
+    border: 5px solid rgb(15, 158, 214);
 }
 
 #Home img {
     display: block;     /* Transforme l'image en bloc */
     margin: 0 auto;     /* Centre l'image horizontalement */
-    max-width: 100%;    /* Rendre l'image responsive */
-    height: auto;
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Ajuste l'image pour qu'elle couvre le conteneur tout en gardant les proportions */
+    filter: blur(0.9px);
 }
 
 #Home h1 {
@@ -46,18 +54,32 @@ nav li {
     z-index: 2;
 }
 
+main {
+    position: relative;
+}
 main #section1{
+    position: absolute;
+    width: 100%;
     background-color: rgb(218, 200, 200);
 }
 
 main #section2 {
+    position: absolute;
+    width: 100%;
+    top: 303px;
     background-color: rgb(216, 216, 187);
 }
 
 main #section3 {
+    position: absolute;
+    width: 100%;
+    top: 606px;
     background-color: rgb(188, 216, 187);
 }
 
 main #section4 {
+    position: absolute;
+    width: 100%;
+    top: 909px;
     background-color: rgb(187, 194, 216);
 }
