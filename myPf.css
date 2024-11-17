@@ -11,7 +11,7 @@ header {
 nav {
     box-sizing: border-box;
     margin: 0 auto;
-    width: 100%;
+    max-width: 100%;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -59,10 +59,28 @@ nav li {
 }
 
 .content-section {
-    position: relative;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
     height: 500px;
-} 
+    width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.texte {
+    background-color: white;
+    padding: 20px;
+    max-width: 600px;
+    width: 80%;
+    text-align: center;
+}
+
 #section2 {
     background-color: rgb(67, 0, 108);
 }
@@ -75,7 +93,6 @@ nav li {
     background-color: rgb(1, 66, 53);
 }
 
-/* Couleurs de texte spécifiques aux sections */
 #section2 .texte {
     color: rgb(67, 0, 108);
 }
@@ -86,13 +103,4 @@ nav li {
 
 #section4 .texte {
     color: rgb(1, 66, 53);
-}
-
-.texte {
-    position: absolute;
-    top: 100px;
-    left: 1000px;
-    padding: 10px 100px;
-    width: 30%;
-    background-color: white;
 }
