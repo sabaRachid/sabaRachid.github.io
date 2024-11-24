@@ -74,7 +74,7 @@ img {
 }
 
 .CV p {
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .CV button {
@@ -121,7 +121,7 @@ main {
 }
 
 .Content1 #Texte p{
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 300px; /* Largeur fixe du conteneur */
     height: 150px;
     overflow-y: scroll; /* Barre de défilement verticale uniquement */
@@ -147,7 +147,7 @@ footer {
 }
 
 footer a {
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
 
