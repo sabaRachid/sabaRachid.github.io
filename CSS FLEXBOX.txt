@@ -1,0 +1,24 @@
+CSS FLEXBOX:
+
+JUSTIFY-CONTENT: mouvements horizontaux
+ALIGN-ITEMS: mouvements verticaux
+flex-direction: en colonne, ligne ou inversés
+ORDER: permet d'agir sur un élément sélectionné pour changer sa position par rapoort aux autres
+ALIGN-SELF: permet de positioner un seul élément sélectionné parmi les autres éléments
+FLEX-WRAP: permet "d'envelopper" les éléments sur une ou plusieurs lignes si ces éléments dépassent la largeur du conteneur
+FLEX-FLOW: FLEX-WRAP + flex-direction
+ALIGN-CONTENT: définir comment plusieurs lignes sont espacées de l'une à l'autre
+
+CSS GRID:
+
+grid-template-column & grid-template-rows: configure les colonnes et lignes en plusieurs fractions
+grid-template:
+
+grid-column-start: selectionne a partir de la nième ligne vertical de la grille à partir de la gauche (n)
+grid-column-end: selectionne a partir de la nième ligne vertical de la grille à partir de la droite (m)
+grid-row-start: (i) 
+grid-row-end: (j)
+grid-column: n/m
+grid-row: i/j
+grid-area: i / n / j / m
+order:
