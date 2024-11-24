@@ -3,9 +3,13 @@ body {
     padding: 0;
 }
 
-header h2 {    
-    color: #083731;
+header #Logo{    
+    display: block;
+    max-width: 80px;
+    max-height: 80px;
+    margin: 0 auto;
 }
+
 
 ul {
     padding: 0;
@@ -13,6 +17,11 @@ ul {
     flex-direction: row;
     list-style: none;
     gap: 10px;   
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI';
     color: #083731;
 }
 
@@ -74,6 +83,15 @@ img {
     border: none;
     margin-top: 2%;
     padding: 10px;
+    cursor: pointer;
+}
+
+.CV button:hover{
+    background-color: rgb(224, 224, 0);
+}
+
+.CV button:active{
+    color: white;
 }
 
 main {
@@ -124,6 +142,26 @@ main {
 
 footer {
     background-color: #083731;
-    color: white;
-    padding: 10px;
+    padding: 15px;
+    text-align: center;
 }
+
+footer a {
+    font-family: 'Segoe UI';
+    color: white;
+}
+
+@media (max-width: 865px) {
+
+    .Content1 {
+        padding: 100px;
+        border-bottom: 5px solid #edc29c;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .Content1 #Media img {
+      max-width: 100%; /* Les images occupent toute la largeur */
+    }
+  }
