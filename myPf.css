@@ -108,7 +108,28 @@ img {
 }
 
 main {
+    position: relative;
     border-top: 5px solid #edc29c;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 15%;
+    right: 8%;
+    padding: 1%;
+    opacity: 0; /* Caché par défaut */
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+
+}
+
+#scrollToTop.show {
+    opacity: 1; /* Rendre visible */
+    visibility: visible; /* Permet l'interaction */
+}
+
+#scrollToTop:hover {
+    background-color: #81da81;
 }
 
 .Content1 {
@@ -164,6 +185,7 @@ footer a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
+
 
 @media (max-width: 865px) {
 
@@ -227,7 +249,7 @@ footer a {
   }
 
   /* Mode sombre */
-  body.dark-mode {
+body.dark-mode {
     background-color: #1F1F1F;
     color: #ffffff;
 }
@@ -238,4 +260,12 @@ li.dark-mode a, h2.dark-mode, .Content1 #Texte h2.dark-mode{
 
 .CV.dark-mode {
     background-color: #1f1f1f00;
+}
+
+main.dark-mode {
+    border-top: 5px solid #D4A373;
+}
+
+.Content1.dark-mode{
+    border-bottom: 5px solid #D4A373;
 }
