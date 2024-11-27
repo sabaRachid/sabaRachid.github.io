@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header #Logo{    
@@ -10,6 +11,11 @@ header #Logo{
     margin: 0 auto;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 ul {
     padding: 0;
@@ -17,12 +23,19 @@ ul {
     flex-direction: row;
     list-style: none;
     gap: 10px;   
+    margin-left: 10px;
+}
+
+nav button {
+    margin: auto 0;
+    margin-right: 10px;
 }
 
 ul li a{
     text-decoration: none;
     font-family: 'Segoe UI';
     color: #083731;
+    font-size: 125%;
 }
 
 .Presentation{
@@ -212,3 +225,17 @@ footer a {
         font-size: 80%;
     }
   }
+
+  /* Mode sombre */
+  body.dark-mode {
+    background-color: #1F1F1F;
+    color: #ffffff;
+}
+
+li.dark-mode a, h2.dark-mode, .Content1 #Texte h2.dark-mode{
+    color: #056c46;
+}
+
+.CV.dark-mode {
+    background-color: #1f1f1f00;
+}
